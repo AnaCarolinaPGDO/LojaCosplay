@@ -1,13 +1,4 @@
 
-
-
-
-
-
-
-
-const base_url = "https://66f5d156436827ced97536d3.mockapi.io/api/v1/:endpoint"
-
 const function cadastro() {
     let nome = document.getElementById("nome").value;
     let email = document.getElementById("email").value;
