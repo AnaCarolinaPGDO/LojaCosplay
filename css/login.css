@@ -1,0 +1,196 @@
+/* Arquivo: login.css */
+
+/* Reset de margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definição de estilo global para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo do logo */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.logo-container img{
+    max-width: 100px;
+    height: auto;
+}
+
+/* Estilo do container principal, card */
+#container {
+    width: 100%;
+    max-width: 450px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 40px; 
+}
+
+/* Estilo do titulo do FORM */
+#titleLogin{
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #007bff;
+    text-align: center;
+}
+
+/* Estilo do formulário */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo para cada campo do formulário */
+.form-label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control{
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    transition: background-color 0.3 ease, border-color 0.3s ease;
+}
+
+.form-control:focus{
+    background-color: #ffffff;
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    
+}
+
+/* Estilo para select estado */
+.form-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.form-select:focus {
+    background-color: #ffffff;
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo para botao de envio */
+.btn-primary {
+    width: 100%;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Estilo para o checkbox */
+.form-check-label{
+    margin-left: 10px;
+}
+
+/* Estilo dos links mudar senha e criar conta */
+#but{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#but .style{
+    color: #007bff;
+    text-decoration: none;
+}
+
+#but .style:hover{
+    text-decoration: underline;
+}
+
+#avisos{
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+#avisos a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+#avisos a:hover{
+    text-decoration: underline;
+}
+
+.cadastro{
+    margin-top: 3px;
+    padding: 5px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.cadastro{
+    margin-top: 3px;
+    padding: 5px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.cadastro a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+.cadastro a:hover{
+    text-decoration: underline;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #f0f0f0; /* Cor de fundo do rodapé */
+    color: #3b3b3b; /* Cor do texto */
+    align-items: center;
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 0; /* Padding do rodapé */
+    position: relative; /* Para o rodapé ficar em baixo */
+    left: 0;
+    bottom: 0; /* Fixa o rodapé na parte inferior */
+    width: 100%; /* Largura total */
+    /*box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
