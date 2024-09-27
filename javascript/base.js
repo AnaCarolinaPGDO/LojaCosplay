@@ -48,6 +48,9 @@ function validarUsuario() {
 }
   validarUsuario();
 
+  function cadastro() {
+    irParaCadastro();
+}
 
 function validarCadastro() {
 const senha = document.getElementById("senha_cad").value;

@@ -29,8 +29,8 @@ function irParaLogin() {
     window.open("../html/login.html", "_self");
 }
 
-function irParaResetarSenha() {
-    window.open("../html/mudarsenha.html", "_self");
+function irParaCadastro() {
+    window.location.href = "../html/cadastrar.html";
 }
 
 
