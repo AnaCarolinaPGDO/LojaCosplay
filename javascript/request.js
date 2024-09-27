@@ -1,13 +1,14 @@
 
 const function cadastro() {
     
+
 } cadastro() {
     let nome = document.getElementById("nome").value;
     let email = document.getElementById("email").value;
     let senha = document.getElementById("senha").value;
 
     const user = {
-        name: name,
+        name: nome,//+
         email: email,
     }
 
@@ -20,6 +21,6 @@ const function cadastro() {
         body: JSON.stringify(user)
     })
     .then(resposta => resposta.json())
-    .then(resultado => alerrt('Usuario criado com sucesso!'))
+    .then(resultado => alert('Informação inválida!'))
     .catch(error => console.log(error))
 }
