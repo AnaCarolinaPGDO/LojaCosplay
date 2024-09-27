@@ -23,6 +23,10 @@ function irParaLogin() {
     window.open("../html/login.html", "_self");
 }
 
+function sair() {
+    removerEmail();
+    irParaLogin();
+}
 function validarUsuario() {
     let logado = usuarioLogado();
     const caminho = window.location.pathname;
@@ -36,6 +40,8 @@ function validarUsuario() {
         irParaLogin();
       }
     }
-  }
+  } else {
+    console.error("Página não encontrada.");
   
+}
   validarUsuario();

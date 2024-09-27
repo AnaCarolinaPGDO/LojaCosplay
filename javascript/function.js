@@ -6,7 +6,7 @@ function login() {
     irParaHome();
     salvarEmail(name);
     } else {
-    alert("Credenciais invalidas!");
+    alert("Por favor adicionar informações de cadastro!");
     }
 }
 
@@ -16,6 +16,10 @@ function irParaHome() {
 
 function irParaLogin() {
     window.open("../html/login.html", "_self");
+}
+
+function irParaResetarSenha() {
+    window.open("../html/mudarsenha.html", "_self");
 }
 function sair() {
     irParaLogin();
