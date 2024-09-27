@@ -19,33 +19,61 @@
 
     </head>
 
+  <main/>
     <body>
+      <div class="logo-container">
+        <img src="caminho/para/seu/logo.png" alt="Logo" style="max-width: 100px; display: block; margin: 0 auto;">
+    </div>
 
-      <a class="links" id="paracadastro"></a>
-        <a class="links" id="paralogin"></a>
-
-    <div id="container">  
+    <div id="container">
         <div id="cardForm">
-        <h2 id="titleLogin">Entre agora!</h2>
+        <h2 id="titleLogin">Fazer login</h2>
         
-        <div id="forms">
-          <div>
-          <label class="titleInput">Usuário</label>
-          <input id="name"  class="styleInput" type="text" placeholder="Usuário" />
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
           </div>
-          <div>
-          <label class="titleInput">Senha</label>
-          <input id="password"  class="styleInput" type="password" placeholder="Senha" />
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="inputPassword4">
           </div>
-        </div>
-        
-        <button id="submitBtn" onclick="login()">Entrar</button>
-        
-        <div id="but">
-          <button onclick="cadastro()" class="style">Não tem uma conta?</button>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Lembrar de mim
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
         </form>
+        <div id="but">
+          <a href="es" class="style">Mudar senha</a>
       </div>
-      </div>    
-    </div>    
+      </div>
+
+      <div id="avisos">
+        Ao criar uma conta, você concorda com as 
+        <a href="https://www.globo.com" target="_blank" rel="noopener noreferrer">
+            Condições de Uso
+        </a>da Heros & Costumes. Por favor verifique a
+        <a href="https://www.globo.com">Notificação de Privacidade</a>,
+        <a href="https://www.globo.com">Notificação de Cookies</a> e a
+        <a href="https://www.globo.com">Notificação de Anúncios Baseados em Interesse</a>.
+    </div>
+    <div class="cadastro">
+      Não possui uma conta?
+      <a href="cadastrar.html">Cadastrar</a>
+    </div>
+  </div>
+  <main/>
+  
+  <footer>
+    <p>&copy; 2024 Heros & Costumes. Todos os direitos reservados.</p>
+</footer>
+    <script src="./home.html"></script>
 </body>
 </html>

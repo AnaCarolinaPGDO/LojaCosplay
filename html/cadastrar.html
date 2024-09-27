@@ -1,58 +1,92 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
+    <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Heroes & Costumes: Cadastrar</title>
 
-    <link rel="icon" href="/fotos/home-com-ferramenta-de-zoom.png">
-    <link rel="stylesheet" href="../css/cadastro.css" />
+    <link rel="icon" href="/fotos/perfil.png">
+    <link rel="stylesheet" href="../css/cadastro.css"/>
 
     <script src="../javascript/base.js" defer></script>
     <script src="../javascript/function.js" defer></script>
-    <script> src="../javascript/request.js"</script>
-</head>
+    <!-- <script src="../javascript/request.js" defer></script> -->
 
-<body>
-    <div class="container" >
-        <a class="links" id="paracadastro"></a>
-        <a class="links" id="paralogin"></a>
+    </head>
 
-    <div id="cadastro">
-        <form method="post" action=""> 
-        <h1>Cadastro</h1> 
+  <main/>
+    <body>
+      <div class="logo-container">
+        <img src="caminho/para/seu/logo.png" alt="Logo" style="max-width: 100px; display: block; margin: 0 auto;">
+    </div>
+
+    <div id="container">
+        <div id="cardForm">
+        <h2 id="titleLogin">Criar conta</h2>
         
-        <p> 
-            <label for="nome_cad">Seu nome</label>
-            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
-        </p>
-        
-        <p> 
-            <label for="email_cad">Seu e-mail</label>
-            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
-        </p>
-        
-        <p> 
-            <label for="senha_cad">Sua senha</label>
-            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
-        </p>
-        
-        <p>
-            <label for="confirmar_senha_cad">Confirmar senha</label>
-            <input id="confirmar_senha_cad" name="confirmar_senha_cad" required="required" type="password" placeholder="confirme a senha"/>
-        </p>
-        <p> 
-            <input type="submit" value="Cadastrar"/> 
-        </p>
-        <p class="link">  
-            <button onclick="login()" class="style">Já possui uma conta?</button>
-        </p>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Endereço</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Rua Principal">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Endereço 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, estúdio, andar">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Cidade</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Estado</label>
+            <select id="inputState" class="form-select">
+              <option selected>Escolha...</option>
+              <option>RJ</option>
+              <option>SP</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">CEP</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
         </form>
+      </div>
+
+      <div id="avisos">
+        Ao criar uma conta, você concorda com as 
+        <a href="https://www.globo.com" target="_blank" rel="noopener noreferrer">
+            Condições de Uso
+        </a>da Heros & Costumes. Por favor verifique a
+        <a href="https://www.globo.com">Notificação de Privacidade</a>,
+        <a href="https://www.globo.com">Notificação de Cookies</a> e a
+        <a href="https://www.globo.com">Notificação de Anúncios Baseados em Interesse</a>.
     </div>
+    <div class="login2">
+      Já possui uma conta? 
+      <a href="login.html">Fazer login</a>
     </div>
-</div>  
+  </div>
+  <main/>
+  
+  <footer>
+    <p>&copy; 2024 Heros & Costumes. Todos os direitos reservados.</p>
+</footer>
+    <script src="./home.html"></script>
 </body>
 </html>

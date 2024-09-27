@@ -15,18 +15,6 @@ function usuarioLogado() {
     return !!email;
 }
 
-function irParaHome() {
-    window.open("../html/home.html", "_self");
-}
-
-function irParaLogin() {
-    window.open("../html/login.html", "_self");
-}
-
-function irParaCadastro() {
-  window.location.href="/html/cadastrar.html";
-}
-
 function sair() {
     removerEmail();
     irParaLogin();
@@ -40,7 +28,7 @@ function validarUsuario() {
       if (logado) {
         irParaHome();
       }
-    } else if (caminho != "/html/login.html") {
+    } else if (caminho != "/html/login.html" && caminho != "/html/cadastrar.html") {
       if (!logado) {
         irParaLogin();
       }
