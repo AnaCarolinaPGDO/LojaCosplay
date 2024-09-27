@@ -177,6 +177,7 @@ form{
 footer {
     padding: 10px 0;
     background-color: #f0f0f0; /* Cor de fundo do rodapé */
+    font-size: 14px;
     color: #3b3b3b; /* Cor do texto */
     align-items: center;
     text-align: center; /* Centraliza o texto */
