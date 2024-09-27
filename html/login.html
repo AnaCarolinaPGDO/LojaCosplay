@@ -15,31 +15,36 @@
 
     <script src="../javascript/base.js" defer></script>
     <script src="../javascript/function.js" defer></script>
-    <script src="../javascript/request.js" defer></script>
+        <script src="../javascript/request.js" defer></script>
 
     </head>
 
     <body>
     <div id="container">  
         <div id="cardForm">
-        <h2 id="titleLogin">Cadastre-se agora!</h2>
+        <h2 id="titleLogin">Entre agora!</h2>
         
         <div id="forms">
+          <div>
           <label class="titleInput">Usuário</label>
           <input id="name"  class="styleInput" type="text" placeholder="Usuário" />
-
+          </div>
+          <div>
           <label class="titleInput">Senha</label>
           <input id="password"  class="styleInput" type="password" placeholder="Senha" />
+          </div>
         </div>
         
-        <button id="submitBtn" onclick="login()">Entrar</button>
-        
-        <div id="but">
-          <a href="es" class="style">Muda senha</a>
-          <a href="ja" class="style">Criar conta</a>
+        <button id="submitBtn" onclick="login()">Entrar</button>     
+
+        <div></div>
+        <button onclick="cadastro()">Cadastrar</button>
       </div>
+
+      </form> 
+      
+
       </div>    
     </div>    
-    <script src="./home.html"></script>
 </body>
 </html>

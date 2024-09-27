@@ -10,6 +10,17 @@ function login() {
     }
 }
 
+function cadastro() {
+    const senha = document.getElementById("senha_cad").value;
+    const senhaConfirmada = document.getElementById("senhacon_cad").value;
+    if (senha !== senhaConfirmada) {
+    alert("As senhas não correspondem!");
+    return false;
+    }
+    irParaLogin
+    return true;
+    }
+
 function irParaHome() {
     window.open("../html/home.html", "_self");
 }
@@ -18,11 +29,16 @@ function irParaLogin() {
     window.open("../html/login.html", "_self");
 }
 
-function irParaResetarSenha() {
-    window.open("../html/mudarsenha.html", "_self");
+function irParaCadastro() {
+    window.location.href = "../html/cadastrar.html";
 }
+
+
 function sair() {
     irParaLogin();
     removerEmail()
 }
 
+function cadastro() {
+    irParaCadastro();
+}
