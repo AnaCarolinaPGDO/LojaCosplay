@@ -23,10 +23,15 @@ function irParaLogin() {
     window.open("../html/login.html", "_self");
 }
 
+function irParaCadastro() {
+  window.location.href="/html/cadastrar.html";
+}
+
 function sair() {
     removerEmail();
     irParaLogin();
 }
+
 function validarUsuario() {
     let logado = usuarioLogado();
     const caminho = window.location.pathname;
@@ -40,8 +45,17 @@ function validarUsuario() {
         irParaLogin();
       }
     }
-  } else {
-    console.error("Página não encontrada.");
-  
 }
   validarUsuario();
+
+
+function validarCadastro() {
+const senha = document.getElementById("senha_cad").value;
+const senhaConfirmada = document.getElementById("senha_confirmar_cad").value;
+if (senha !== senhaConfirmada) {
+alert("As senhas não correspondem!");
+return false;
+}
+
+return true;
+}
