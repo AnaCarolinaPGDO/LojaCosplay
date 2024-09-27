@@ -11,20 +11,21 @@
     <title>Heroes & Costumes</title>
 
     <link rel="icon" href="/fotos/perfil.png">
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/login.css"/>
 
     <script src="../javascript/base.js" defer></script>
-    <script src="../javascript/functions.js" defer></script>
+    <script src="../javascript/function.js" defer></script>
+    <script src="../javascript/request.js" defer></script>
 
     </head>
 
     <body>
     <div id="container">  
         <div id="cardForm">
-        <h2 id="titleLogin">BEM-VINDO VIAJANTE!</h2>
+        <h2 id="titleLogin">Entre agora!</h2>
         
         <div id="forms">
-          <label class="titleInput">User name</label>
+          <label class="titleInput">Usuário</label>
           <input id="name"  class="styleInput" type="text" placeholder="Usuário" />
 
           <label class="titleInput">Senha</label>
@@ -33,12 +34,11 @@
         
         <button id="submitBtn" onclick="login()">Entrar</button>
         
-        <div id="but">
-          <a href="es" class="style">Muda senha</a>
-          <a href="ja" class="style">Criar conta</a>
-      </div>
+        <form action="./cadastrar.html">
+          <input type="submit" value="cadastrar"/>
+        </form>
       </div>    
     </div>    
-    <script src=""></script>
+    <script src="./home.html"></script>
 </body>
 </html>
