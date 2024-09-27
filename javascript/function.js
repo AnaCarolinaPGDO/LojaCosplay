@@ -6,7 +6,7 @@ function login() {
     irParaHome();
     salvarEmail(name);
     } else {
-    alert("Por favor adicionar informações de cadastro!");
+    alert("Por favor adicionar informações de login!");
     }
 }
 
@@ -29,8 +29,8 @@ function irParaLogin() {
     window.open("../html/login.html", "_self");
 }
 
-function irParaCadastro() {
-    window.location.href = "../html/cadastrar.html";
+function irParaResetarSenha() {
+    window.open("../html/mudarsenha.html", "_self");
 }
 
 
