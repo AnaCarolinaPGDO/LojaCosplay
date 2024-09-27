@@ -30,9 +30,8 @@ function irParaLogin() {
 }
 
 function irParaCadastro() {
-    window.location.href = "../html/cadastrar.html";
+    window.open("../html/cadastrar.html", "_self");
 }
-
 
 function sair() {
     irParaLogin();
