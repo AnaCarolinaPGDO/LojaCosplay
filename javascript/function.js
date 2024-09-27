@@ -1,6 +1,6 @@
 function login() {
-    const name = document.getElementById("name").value;
-    const password = document.getElementById("password").value;
+    const name = document.getElementById("inputEmail4").value;
+    const password = document.getElementById("inputPassword4").value;
     
     if (name == "admin@admin.com" && password == 123) {
     irParaHome();
