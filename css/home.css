@@ -5,6 +5,21 @@ body {
     padding: 0;
 }
 
+.h1 {
+    font-size: 2em;
+    color: #e05c15f1;
+    text-align: center;
+}
+.h2 {
+    font-size: 1.5em;
+    color: #15158df1;
+    text-align: center;
+}
+.h3{
+    font-size: 1.2em;
+    color: #15155df1;
+    text-align: center;
+}
 header {
     background-color: #460202;
     color: #fff;
@@ -13,7 +28,8 @@ header {
 }
 
 header h1 {
-    margin: 0;
+    padding: 2em;
+    text-align: center;
 }
 
 nav ul {
