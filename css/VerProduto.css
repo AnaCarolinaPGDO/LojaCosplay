@@ -125,37 +125,88 @@ nav ul li a:hover {
     background-color: #0056b3; /* Cor do botão ao passar o mouse */
 }
 
+/* Botão de pesquisa */
+.pesquisa button {
+    background-color: #007bff; /* Cor do botão */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 10px 20px; /* Padding interno */
+    font-size: 1em; /* Tamanho da fonte */
+    border-radius: 25px; /* Bordas arredondadas para um visual moderno */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+/* Estilo do texto completo e botão "Leia Mais" */
+.texto-completo {
+    display: none; /* Esconde o texto completo */
+}
+
+.btn-leia-mais {
+    background: none;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: color 0.3s ease; /* Transição suave para a cor */
+    display: block;
+    flex-basis: 100%; /* Faz com que o botão ocupe toda a largura do contêiner */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-leia-mais:hover {
+    color: #0056b3; /* Cor ao passar o mouse */
+}
 
 /* Estilo dos produtos */
 .produto {
-    background-color: #ffffff; /* Fundo branco para os produtos */
+    background-color: #f8f9fa; /* Fundo suave para os produtos */
     border: 1px solid #dee2e6; /* Borda cinza */
-    border-radius: 4px; /* Bordas arredondadas */
+    border-radius: 8px; /* Bordas arredondadas */
     margin: 20px 0; /* Margem acima e abaixo dos produtos */
-    padding: 15px; /* Padding interno */
+    padding: 20px; /* Padding interno */
     display: flex; /* Flexbox para o layout do produto */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
-    transition: transform 0.2s; /* Transição suave para efeito de hover */
+    align-items: flex-start; /* Alinha os itens no topo para evitar esticamento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+    flex-wrap: wrap; /* Permite que os elementos dentro do produto se reorganizem quando necessário */
 }
 
 .produto:hover {
-    transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.03); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais intensa ao passar o mouse */
 }
 
 .produto img {
-    max-width: 150px; /* Largura máxima da imagem */
-    margin-right: 20px; /* Margem à direita da imagem */
+    max-width: 250px; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 30px; /* Margem à direita da imagem */
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+    flex-shrink: 0; /* Impede que a imagem seja redimensionada para menos que o necessário */
 }
 
 .produto h2 {
     margin-bottom: 10px; /* Margem abaixo do título */
-    font-size: 1.5em; /* Aumenta o tamanho do título */
-    color: #007bff; /* Cor do título */
+    font-size: 1.8em; /* Aumenta o tamanho do título */
+    color: #343a40; /* Cor do título mais escura */
+    flex-basis: 100%; /* Faz com que o título ocupe toda a largura do contêiner */
 }
 
 .produto p {
     margin: 5px 0; /* Margem acima e abaixo do parágrafo */
+    color: #6c757d; /* Cor suave para o texto */
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
+    flex-basis: 100%; /* Faz com que o texto ocupe toda a largura do contêiner */
 }
+
+
+.btn-leia-mais:hover {
+    color: #0056b3; /* Cor ao passar o mouse */
+}
+
 
 /* Estilo do rodapé */
 footer {

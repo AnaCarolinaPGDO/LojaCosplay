@@ -30,3 +30,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.querySelectorAll('.btn-leia-mais').forEach(button => {
+    button.addEventListener('click', function () {
+        const produto = this.closest('.produto');
+        const textoCompleto = produto.querySelector('.texto-completo');
+        const textoCurto = produto.querySelector('.texto-curto');
+
+        if (textoCompleto.style.display === 'none') {
+            textoCompleto.style.display = 'block';  // Mostra o texto completo
+            textoCurto.style.display = 'none';      // Esconde o texto curto
+            this.textContent = 'Mostrar menos';     // Altera o texto do botão
+        } else {
+            textoCompleto.style.display = 'none';   // Esconde o texto completo
+            textoCurto.style.display = 'block';     // Mostra o texto curto
+            this.textContent = 'Leia mais';         // Altera o texto do botão
+        }
+    });
+});
+
