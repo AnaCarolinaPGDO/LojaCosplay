@@ -17,7 +17,7 @@ function cadastro() {
     alert("As senhas não correspondem!");
     return false;
     }
-    irParaLogin
+    irParaLogin();
     return true;
     }
 
@@ -34,8 +34,8 @@ function irParaCadastro() {
 }
 
 function sair() {
-    irParaLogin();
     removerEmail()
+    irParaHome();
 }
 
 function cadastro() {
