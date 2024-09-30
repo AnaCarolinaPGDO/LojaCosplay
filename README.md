@@ -36,3 +36,46 @@ Até finalizar
 Nós usamos HTML, CSS e JavaScript no VSCode para esse projeto.
 
 ## 💡 Autores
+<table align="center">
+    <tr>
+    <td align="center">
+      <a href="https://github.com/isabe1l4">
+        <img src="https://avatars.githubusercontent.com/u/166730062?v=4" width="100px;" alt="Avatar Isabela Assumpção"/><br>
+        <sub>
+          <b>Isabela Assumpção</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/AnaCarolinaPGDO">
+        <img src="https://avatars.githubusercontent.com/u/50124714?v=4" width="100px;" alt="Avatar Ana Carolina"/><br>
+        <sub>
+          <b>Ana Carolina</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ericsilva0309">
+        <img src="https://avatars.githubusercontent.com/u/177892015?v=4" width="100px;" alt="Avatar Eric Silva"/><br>
+        <sub>
+          <b>Eric Silva</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Suru13">
+        <img src="https://avatars.githubusercontent.com/u/78802877?v=4" width="100px;" alt="Avatar Suru William"/><br>
+        <sub>
+          <b>Suru William</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Denni-Santos">
+        <img src="https://avatars.githubusercontent.com/u/14929797?v=4" width="100px;" alt="Avatar Denílson dos Santos"/><br>
+        <sub>
+          <b>Denílson dos Santos</b>
+        </sub>
+      </a>
+    </td>
+</table>
