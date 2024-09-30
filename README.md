@@ -40,9 +40,9 @@ Nós usamos HTML, CSS e JavaScript no VSCode para esse projeto.
     <tr>
     <td align="center">
       <a href="https://github.com/isabe1l4">
-        <img src="https://avatars.githubusercontent.com/u/166730062?v=4" width="100px;" alt="Avatar Isabela Assumpção"/><br>
+        <img src="https://avatars.githubusercontent.com/u/166730062?v=4" width="100px;" alt="Avatar Isabella Assumpção"/><br>
         <sub>
-          <b>Isabela Assumpção</b>
+          <b>Isabella Assumpção</b>
         </sub>
       </a>
     </td>
