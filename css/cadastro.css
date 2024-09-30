@@ -41,6 +41,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
 }
 
 /* Estilo do titulo do FORM */
@@ -49,6 +51,7 @@ body {
     font-size: 22px;
     color: #c04710;
     text-align: center;
+    
 }
 
 /* Estilo do formulário */

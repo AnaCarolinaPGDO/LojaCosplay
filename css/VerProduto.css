@@ -188,6 +188,12 @@ nav ul li a:hover {
     flex-shrink: 0; /* Impede que a imagem seja redimensionada para menos que o necessário */
 }
 
+.produto .preco {
+    font-size: 1.2em; /* Tamanho do preço */
+    color: #28a745; /* Cor verde para o preço */
+    margin-bottom: 15px; /* Margem abaixo do preço */
+}
+
 .produto h2 {
     margin-bottom: 10px; /* Margem abaixo do título */
     font-size: 1.8em; /* Aumenta o tamanho do título */
@@ -218,4 +224,20 @@ footer {
     bottom: 0; /* Fixa o rodapé na parte inferior */
     width: 100%; /* Largura total */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto {
+        flex-direction: column;
+    }
+
+    .produto img {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
 }
