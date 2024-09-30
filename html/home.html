@@ -17,30 +17,38 @@
 </head>
 
 <body>
-    <header></header>
+<<<<<<< Updated upstream
+    <header>
         <h1>Bem-vindo à Heroes & Costumes</h1>
+=======
+    <header></header>
+        <h1 class="h1">Bem-vindo à Heroes & Costumes</h1>
+        
+>>>>>>> Stashed changes
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./VerProduto.html">Produtos</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./contato">Contato</a></li>
+                <li><a id="sairBtn" onclick="sair()">Sair</a></li>
+                <li><a id="loginBtn" style="display:none;" onclick="irParaLogin()" class="btn btn-primary">Sign in</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="central">
-            <h2>Ofertas Incríveis</h2>
+            <h2 class="h2">Ofertas Incríveis</h2>
             <p>Confira nossas promoções exclusivas!</p>
         </section>
         <section class="produtos">
-            <h2>Produtos Populares</h2>
+            <h2 class="h2">Produtos Populares</h2>
             <div class="produto">
-                <h3>Produto 1</h3>
+                <h3 class="h3">Produto 1</h3>
                 <p>Descrição do Produto 1</p>
             </div>
             <div class="produto">
-                <h3>Produto 2</h3>
+                <h3 class="h3">Produto 2</h3>
                 <p>Descrição do Produto 2</p>
             </div>
         </section>
@@ -48,7 +56,6 @@
     <footer>
         <p>&copy; 2024 Heroes & Costumes</p>
     </footer>
-</body>
-    <button onclick="sair()">Sair</button>
+    
 </body>
 </html>

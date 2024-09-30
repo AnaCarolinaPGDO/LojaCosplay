@@ -10,7 +10,7 @@
 
     <title>login</title>
 
-    <link rel="icon" href="/fotos/perfil.png">
+    <link rel="icon" href="/fotos/logo/logo.png">
     <link rel="stylesheet" href="../css/login.css"/>
 
     <script src="../javascript/base.js" defer></script>
@@ -19,10 +19,10 @@
 
     </head>
 
-  <main/>
     <body>
+      <main>
       <div class="logo-container">
-        <img src="caminho/para/seu/logo.png" alt="Logo" style="max-width: 100px; display: block; margin: 0 auto;">
+        <img src="../fotos/logo/logo.png" alt="Logo" style="max-width: 100px; display: block; margin: 0 auto;">
     </div>
 
     <div id="container">
@@ -47,7 +47,9 @@
             </div>
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+
+            <button onclick="login()" class="btn btn-primary">Sign in</button>
+
           </div>
         </form>
         <div id="but">
@@ -66,14 +68,13 @@
     </div>
     <div class="cadastro">
       Não possui uma conta?
-      <a href="cadastrar.html">Cadastrar</a>
+      <a href="./cadastrar.html">Cadastrar</a>
     </div>
   </div>
   <main/>
   
   <footer>
-    <p>&copy; 2024 Heros & Costumes. Todos os direitos reservados.</p>
+    <p>&copy; 2024 Heroes & Costumes. Todos os direitos reservados.</p>
 </footer>
-    <script src="./home.html"></script>
 </body>
 </html>

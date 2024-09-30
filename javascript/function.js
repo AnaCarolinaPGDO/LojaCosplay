@@ -1,6 +1,6 @@
 function login() {
-    const name = document.getElementById("name").value;
-    const password = document.getElementById("password").value;
+    const name = document.getElementById("inputEmail4").value;
+    const password = document.getElementById("inputPassword4").value;
     
     if (name == "admin@admin.com" && password == 123) {
     irParaHome();
@@ -17,7 +17,7 @@ function cadastro() {
     alert("As senhas não correspondem!");
     return false;
     }
-    irParaLogin
+    irParaLogin();
     return true;
     }
 
@@ -30,13 +30,12 @@ function irParaLogin() {
 }
 
 function irParaCadastro() {
-    window.location.href = "../html/cadastrar.html";
+    window.open("../html/cadastrar.html", "_self");
 }
 
-
 function sair() {
-    irParaLogin();
     removerEmail()
+    irParaHome();
 }
 
 function cadastro() {
