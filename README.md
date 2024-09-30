@@ -72,7 +72,7 @@ Nós usamos HTML, CSS e JavaScript no VSCode para esse projeto.
     </td>
     <td align="center">
       <a href="https://github.com/Denni-Santos">
-        <img src="https://avatars.githubusercontent.com/u/14929797?v=4" width="100px;" alt="Avatar Denílson dos Santos"/><br>
+        <img src="https://avatars.githubusercontent.com/u/177896058?v=4" width="100px;" alt="Avatar Denílson dos Santos"/><br>
         <sub>
           <b>Denílson dos Santos</b>
         </sub>
