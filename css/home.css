@@ -118,3 +118,8 @@ footer {
     width: 100%;
     bottom: 0;
 }
+.icone {
+    margin-right: 1em;
+    width: 250px;
+    height: 250px;
+}
