@@ -22,7 +22,7 @@ h1 {
 .autor {
     display: inline-block;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
     background-color: #fff;
     border: 5px solid #ddd;
     border-radius: 10px;
@@ -42,7 +42,7 @@ h1 {
 }
 
 header {
-    background-color: #460202;
+    background-color:  #5a0404;
     color: #fff;
     padding: 1em;
     text-align: center;
