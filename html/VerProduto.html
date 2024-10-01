@@ -17,25 +17,25 @@
         <nav>
             <a href="./home.html"><img src="../fotos/logo/logo.png" alt="Logo da Loja"></a>
             <p>
-                <a href="./login.html">OFERTAS</a>
+                <a href="https://www.globo.com">OFERTAS</a>
             </p>
             <p>
-                <a href="./login.html">HALLOWEEN</a>
+                <a href="https://www.globo.com">HALLOWEEN</a>
             </p>
             <p>
-                <a href="./login.html">KAWAII</a>
+                <a href="https://www.globo.com">KAWAII</a>
             </p>
             <p>
-                <a href="./login.html">PRESENTES</a>
+                <a href="https://www.globo.com">PRESENTES</a>
             </p>
             <p>
-                <a href="./login.html">CASA E DECORAÇÃO</a>
+                <a href="https://www.globo.com">CASA E DECORAÇÃO</a>
             </p>
             <p>
-                <a href="./login.html">LENTES DE CONTATO</a>
+                <a href="https://www.globo.com">LENTES DE CONTATO</a>
             </p>
             <p>
-                <a href="./login.html">CONJUNTOS</a>
+                <a href="https://www.globo.com">CONJUNTOS</a>
             </p>
             <ul>
                 <li><a href="./login.html"> <img src="../fotos/do-utilizador.png" alt="icone de perfil"></a></li>
@@ -106,7 +106,23 @@
                         UM HOBBY COMUM DE FÃS DE IMPACTO GENSHIN: Os trajes Venti são feitos de tecido lindo e corte tridimensional, adequado para a menina, adolescentes, estudantes, casais, amantes de anime, Genshin Fãs de impacto
                         BEM-VINDO À SUA PERGUNTA: Temos fantasias para todos os personagens Genshin, e cada fantasia está disponível em vários tamanhos, se você não tiver certeza do seu tamanho, sinta-se à vontade para pergunte-me, e eu irei fornecer-lhe o melhor tamanho</p>
                     <button class="btn-leia-mais">Leia mais</button>
-                    <button class="comprar">COMPRAR</button>
+                    <button class="comprar" 
+                        data-nome="Roupas Venti Cosplay" 
+                        data-preco="R$ 699,00" 
+                        data-imagem="../fotos/produtos/conjunto-venti.jpg" 
+                        onclick="openPopup(this)">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <img src="" alt="Imagem do Produto" id="popup-img">
+                <div>
+                    <h2>Confirmar Compra</h2>
+                    <p id="popup-text">Você deseja adicionar este item ao carrinho?</p>
+                    <button onclick="goToCart()">Comprar</button> <!-- O botão fica abaixo do texto -->
                 </div>
             </div>
         </div>

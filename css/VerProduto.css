@@ -319,6 +319,69 @@ a:hover {
     background-color: #0056b3; /* Cor do botão ao passar o mouse */
 }
 
+.popup {
+    display: none; /* Inicialmente escondido */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 999; /* Fica na frente de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ocupa toda a tela */
+    height: 100%; /* Ocupa toda a tela */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo desfocado */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Conteúdo do pop-up */
+.popup-content {
+    background-color: #fff; /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    width: 90%; /* Aumentar a largura do pop-up para 90% */
+    max-width: 800px; /* Largura máxima aumentada */
+    display: flex; /* Flexbox para alinhar a imagem e o texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Imagem do produto */
+.popup-content img {
+    max-width: 200px; /* Aumentar a largura máxima da imagem */
+    height: auto; /* Mantém a proporção */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+}
+
+/* Texto do pop-up */
+.popup-content div {
+    display: flex;
+    flex-direction: column; /* Alinha os textos em coluna */
+    justify-content: flex-start; /* Alinha os textos ao topo */
+}
+
+/* Botão de fechar */
+.close {
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-size: 24px; /* Tamanho do ícone de fechar */
+    float: right; /* Alinha à direita */
+    margin-bottom: 15px; /* Espaço abaixo do botão de fechar */
+}
+
+/* Estilo do botão "Comprar" */
+.popup-content button {
+    margin-top: 10px; /* Espaço acima do botão */
+    padding: 10px 15px; /* Espaçamento interno */
+    background-color: blue; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    border: none; /* Remove bordas */
+    border-radius: 1px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+/* Efeito hover no botão "Comprar" */
+.popup-content button:hover {
+    background-color: darkblue; /* Cor mais escura ao passar o mouse */
+}
 
 /* Estilo do rodapé */
 footer {

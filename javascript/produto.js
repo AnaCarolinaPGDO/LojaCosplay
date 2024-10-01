@@ -83,6 +83,43 @@ setInterval(updateText, 3000);
 // Inicializa com o primeiro texto
 updateText();
 
+// Seleciona o elemento do pop-up
+// Seleciona o elemento do pop-up
+const popup = document.getElementById('popup');
+const popupContent = popup.querySelector('.popup-content');
+
+function openPopup(button) {
+    // Pega os dados do botão clicado
+    const nome = button.getAttribute('data-nome');
+    const preco = button.getAttribute('data-preco');
+    const imagem = button.getAttribute('data-imagem'); // Adiciona a imagem
+    
+    // Atualiza o conteúdo do pop-up
+    popupContent.innerHTML = `
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img src="${imagem}" alt="${nome}" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 15px;">
+        <p>Você deseja adicionar <strong>${nome}</strong> ao carrinho por <strong>${preco}</strong>?</p>
+        <button onclick="goToCart()">Comprar</button>
+    `;
+
+    // Exibe o pop-up
+    popup.style.display = 'flex'; // Mude para 'flex' para centralizar
+
+}
+
+function closePopup() {
+    popup.style.display = 'none';
+}
+
+function goToCart() {
+    // Aqui você pode adicionar a lógica para adicionar o item ao carrinho
+    alert('Item adicionado ao carrinho!'); // Exemplo simples
+    closePopup(); // Fecha o pop-up após a ação
+}
+
+
+
+
 
 
 
