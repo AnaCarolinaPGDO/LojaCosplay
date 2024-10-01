@@ -102,9 +102,6 @@ footer {
     text-align: center;
     width: 100%;
     padding: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .n2 {
@@ -121,7 +118,4 @@ footer {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
