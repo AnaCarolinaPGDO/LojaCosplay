@@ -13,29 +13,98 @@ body {
 }
 
 /* Estilo do cabeçalho */
-header {
-    background-color: #183059; /* Cor de fundo do cabeçalho */
+#h1 {
+    background-color: #F5F5F5; /* Cor de fundo do cabeçalho */
     padding: 15px 30px; /* Padding para o cabeçalho */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+#h0 {
+    background-color: #88B04B; /* Cor de fundo do cabeçalho */
+    padding: 15px; /* Padding para o cabeçalho */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    display: flex; /* Usando flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+#h0 h1 {
+    font-size: 2rem; /* Aumenta o tamanho da fonte */
+    color: #F5F5F5; /* Cor do texto */
+    margin: 0; /* Remover margem vertical */
+    text-align: center; /* Centraliza o texto */
+}
+
+#dynamic-text {
+    font-size: 1.1rem; /* Tamanho da fonte do texto dinâmico */
+    color: #F5F5F5; /* Cor do texto dinâmico */
+    margin: 0 20px; /* Margem entre o texto dinâmico e outros elementos */
+    font-style: italic; /* Estilo itálico para destaque */
+    flex-grow: 1; /* Faz com que ocupe o espaço restante */
+    text-align: center; /* Centraliza o texto dinâmico */
+    opacity: 1; /* Opacidade inicial */
+    transition: opacity 0.5s ease-in-out; /* Transição suave para a opacidade */
+}
+
+#h2 {
+    background-color: #d6b916; /* Cor de fundo do cabeçalho */
+    padding: 50px; /* Padding para o cabeçalho */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    display: flex; /* Usando flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    margin: 0; /* Margem superior e inferior */
+}
+
+#h2 h2 {
+    font-size: 1.3rem; /* Aumenta o tamanho da fonte */
+    color: #141414; /* Cor do texto */
+    margin: 0; /* Remove margens padrão */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre letras */
 }
 
 nav {
     display: flex;
     justify-content: space-between; /* Espaço entre logo e menu */
     align-items: center; /* Centraliza verticalmente */
+    margin-right: 25px;
 }
 
 nav img {
-    max-height: 50px; /* Altura máxima do logo */
+    max-height: 95px; /* Altura máxima do logo */
+    margin-left: 20px;
 }
 
 nav ul {
-    list-style: none; /* Remove marcadores da lista */
-    display: flex; /* Usar flexbox para menu */
+    display: flex;
+    list-style: none; /* Remove os marcadores da lista */
+    gap: 20px; /* Espaçamento entre os ícones */
+    /* margin: 0;
+    padding: 0; */
+}
+
+nav ul li a img {
+    max-height: 20px; /* Controla a altura dos ícones */
+    /*filter: invert(1);*/ /* Inverte as cores (se seus ícones forem escuros) */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transições suaves */
+}
+
+nav ul li a img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    filter: invert(0.7); /* Ajusta a cor ao passar o mouse */
 }
 
 nav ul li {
-    margin-left: 30px; /* Margem entre os itens do menu */
+    margin-left: 5px; /* Margem entre os itens do menu */
+    margin-right: 5px; /* Margem à direita */
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    display: inline;
 }
 
 nav ul li a {
@@ -138,7 +207,7 @@ nav ul li a:hover {
 
 /* Estilo do texto completo e botão "Leia Mais" */
 .texto-completo {
-    display: none; /* Esconde o texto completo */
+    display: none; /* Esconde o texto completo por padrão */
 }
 
 .btn-leia-mais {
@@ -150,11 +219,11 @@ nav ul li a:hover {
     padding: 0;
     font-size: 1em;
     margin-top: 10px;
+    margin-bottom: 20px;
     transition: color 0.3s ease; /* Transição suave para a cor */
     display: block;
     flex-basis: 100%; /* Faz com que o botão ocupe toda a largura do contêiner */
-    margin-top: 10px;
-    margin-bottom: 20px;
+    text-align: center; /* Centraliza o texto do botão */
 }
 
 .btn-leia-mais:hover {
@@ -175,15 +244,24 @@ nav ul li a:hover {
     flex-wrap: wrap; /* Permite que os elementos dentro do produto se reorganizem quando necessário */
 }
 
+a {
+    text-decoration: none; /* Remove o sublinhado de todos os links */
+    color: inherit; /* Faz com que a cor do link herde da cor do texto pai */
+}
+
+a:hover {
+    color: #0056b3; /* Cor ao passar o mouse, se desejar manter o efeito */
+}
+
 .produto:hover {
-    transform: scale(1.03); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.01); /* Efeito de zoom ao passar o mouse */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais intensa ao passar o mouse */
 }
 
 .produto img {
-    max-width: 250px; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    max-width: 200px; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
     height: auto; /* Mantém a proporção da imagem */
-    margin-right: 30px; /* Margem à direita da imagem */
+    margin-right: 20px; /* Margem à direita da imagem */
     border-radius: 8px; /* Bordas arredondadas na imagem */
     flex-shrink: 0; /* Impede que a imagem seja redimensionada para menos que o necessário */
 }
@@ -199,6 +277,7 @@ nav ul li a:hover {
     font-size: 1.8em; /* Aumenta o tamanho do título */
     color: #343a40; /* Cor do título mais escura */
     flex-basis: 100%; /* Faz com que o título ocupe toda a largura do contêiner */
+    text-decoration: none;
 }
 
 .produto p {
@@ -206,11 +285,38 @@ nav ul li a:hover {
     color: #6c757d; /* Cor suave para o texto */
     line-height: 1.6; /* Melhor espaçamento entre linhas */
     flex-basis: 100%; /* Faz com que o texto ocupe toda a largura do contêiner */
+    text-decoration: none;
 }
 
 
-.btn-leia-mais:hover {
-    color: #0056b3; /* Cor ao passar o mouse */
+
+.btn-leia-mais {
+    padding: 8px 13px; /* Padding do botão */
+    border: 1px solid #007bff; /* Bordas azuis */
+    background: none; /* Fundo transparente */
+    color: #007bff; /* Cor do texto */
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+    text-decoration: none;
+}
+
+/* .btn-leia-mais:hover {
+    text-decoration: underline; /* Sublinha o texto ao passar o mouse 
+} */
+
+.comprar {
+    padding: 10px 15px; /* Padding do botão */
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #ffffff; /* Cor do texto */
+    border: none; /* Remove bordas padrão */
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave para fundo */
+}
+
+.comprar:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
 }
 
 
