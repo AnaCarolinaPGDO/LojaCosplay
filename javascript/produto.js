@@ -49,3 +49,42 @@ document.querySelectorAll('.btn-leia-mais').forEach(button => {
     });
 });
 
+
+const texts = [
+    "A MAIS COMPLETA LOJA DE COSPLAY DO BRASIL",
+    "07 DIAS PARA TROCA E DEVOLUÇÃO",
+    "Explorando o mundo do cosplay!",
+    "Encontre os melhores produtos!",
+    "Transforme sua aparência!",
+    "Sinta-se como seu personagem favorito!"
+];
+
+let currentIndex = 0;
+const dynamicTextElement = document.getElementById('dynamic-text');
+
+function updateText() {
+    // Diminui a opacidade para 0 antes de mudar o texto
+    dynamicTextElement.style.opacity = 0;
+
+    // Espera a transição de opacidade terminar antes de mudar o texto
+    setTimeout(() => {
+        // Atualiza o texto dinâmico
+        dynamicTextElement.textContent = texts[currentIndex];
+        // Aumenta a opacidade para 1
+        dynamicTextElement.style.opacity = 1;
+        // Move para o próximo texto
+        currentIndex = (currentIndex + 1) % texts.length;
+    }, 500); // Tempo de espera igual ao da transição (0.5s)
+}
+
+// Chama a função a cada 3 segundos
+setInterval(updateText, 3000);
+
+// Inicializa com o primeiro texto
+updateText();
+
+
+
+
+
+
