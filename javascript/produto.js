@@ -117,6 +117,31 @@ function goToCart() {
     closePopup(); // Fecha o pop-up após a ação
 }
 
+let currentSlide = 0; // Índice da imagem atual
+const slides = document.querySelectorAll('.banner-images img'); // Seleciona todas as imagens
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active'); // Remove a classe ativa de todas as imagens
+    });
+    slides[index].classList.add('active'); // Adiciona a classe ativa à imagem atual
+}
+
+function changeSlide(direction) {
+    currentSlide += direction; // Muda o índice da imagem atual
+    if (currentSlide < 0) currentSlide = slides.length - 1; // Volta para a última imagem se for menor que 0
+    if (currentSlide >= slides.length) currentSlide = 0; // Volta para a primeira imagem se for maior que o número de imagens
+    showSlide(currentSlide); // Mostra a imagem atual
+}
+
+// Intervalo para mudar as imagens automaticamente a cada 5 segundos
+setInterval(() => {
+    changeSlide(1); // Muda a imagem para a próxima
+}, 5000);
+
+// Exibe a primeira imagem inicialmente
+showSlide(currentSlide);
+
 
 
 

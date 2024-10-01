@@ -14,22 +14,61 @@
     <script src="../javascript/base.js" defer></script>
     <script src="../javascript/function.js" defer></script>
     <script src="../javascript/request.js" defer></script>
+    
+    <link rel="stylesheet" href="../css/VerProduto.css" />
 </head>
 
 <body>
-    <header>
-        <h1>Bem-vindo à Heroes & Costumes</h1>
-        <img class="icone" src="../fotos/logo/logo.png" alt="Logo">
+    <header id="h0">
+        <div id="dynamic-text"></div> <!-- Div para o texto dinâmico -->
+    </header>
+
+    <header id="h1">
         <nav>
+            <a href="./home.html"><img src="../fotos/logo/logo.png" alt="Logo da Loja"></a>
+            <p>
+                <a href="https://www.globo.com">OFERTAS</a>
+            </p>
+            <p>
+                <a href="./VerProduto.html">VER TODOS</a>
+            </p>
+            <p>
+                <a href="./sobre.html">SOBRE</a>
+            </p>
+            <p>
+                <a href="./contato.html">CONTATO</a>
+            </p>
+            <p>
+                <a href="https://www.globo.com">PRESENTES</a>
+            </p>
+            <p>
+                <a href="https://www.globo.com">CASA E DECORAÇÃO</a>
+            </p>
+            <p>
+                <a href="https://www.globo.com">LENTES DE CONTATO</a>
+            </p>
+            <p>
+                <a href="https://www.globo.com">CONJUNTOS</a>
+            </p>
             <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./VerProduto.html">Produtos</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="./contato.html">Contato</a></li>
-                <li><a id="sairBtn" onclick="sair()">Sair</a></li>
-                <li><a id="loginBtn" style="display:none;" onclick="irParaLogin()" class="btn btn-primary">Sign in</a></li>
+                <li><a href="./login.html"> <img src="../fotos/do-utilizador.png" alt="icone de perfil"></a></li>
+                <li><a href="https://www.globo.com"> <img src="../fotos/contorno-em-forma-de-coracao.png" alt="favoritos"></a></li>
+                <li><a href="https://www.globo.com"> <img src="../fotos/carrinho-de-compras.png" alt="carrinho"></a></li>
             </ul>
         </nav>
+    </header>
+    <header id="h2">
+        <div class="banner">
+            <div class="banner-images">
+                <img src="../fotos/opera_gIpaSQkQDh.png" alt="Banner 1" class="active">
+                <img src="../fotos/opera_9SxS6kkrdy.png" alt="Banner 2">
+                <img src="imagem3.jpg" alt="Banner 3">
+            </div>
+            <div class="banner-controls">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
     </header>
     <main>
         <section class="central">
@@ -60,6 +99,6 @@
     <footer>
         <p>&copy; 2024 Heroes & Costumes</p>
     </footer>
-    
+    <script src="../javascript/produto.js"></script>
 </body>
 </html>

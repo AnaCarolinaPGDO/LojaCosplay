@@ -5,51 +5,147 @@ body {
     padding: 0;
 }
 
-.h1 {
-    font-size: 2em;
-    color: #e05c15f1;
-    text-align: center;
-}
-.h2 {
-    font-size: 1.5em;
-    color: #15158df1;
-    text-align: center;
-    margin-bottom: 2em;
-    text-align: center;
-}
-.h3{
-    font-size: 1.2em;
-    color: #15155df1;
-    text-align: center;
-}
-header {
-    background-color: #460202;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-    
+.banner {
+    position: relative;
+    max-width: 100%; /* Limita a largura do banner */
+    overflow: hidden; /* Oculta as imagens que saem do banner */
 }
 
-header h1 {
-    padding: 0em;
-    text-align: center;
+.banner-images {
+    display: flex; /* Flexbox para alinhar as imagens horizontalmente */
+    transition: transform 0.5s ease; /* Transição suave para as mudanças de imagem */
+}
+
+.banner-images img {
+    max-width: 100%; /* A imagem ocupa 100% da largura do container */
+    display: none; /* Inicialmente esconde todas as imagens */
+}
+
+.banner-images img.active {
+    display: block; /* Apenas a imagem ativa é exibida */
+}
+
+.banner-controls {
+    position: absolute; /* Posiciona os controles dentro do banner */
+    top: 50%; /* Centraliza verticalmente */
+    width: 100%; /* Largura total */
+    display: flex;
+    justify-content: space-between; /* Espaço entre os botões */
+    transform: translateY(-50%); /* Ajusta para centralização */
+}
+
+.banner-controls button {
+    background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo semi-transparente */
+    border: none; /* Remove bordas */
+    padding: 10px; /* Espaçamento interno */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+.banner-controls button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Cor de fundo ao passar o mouse */
+}
+
+
+#h1 {
+    background-color: #F5F5F5; /* Cor de fundo do cabeçalho */
+    padding: 15px 30px; /* Padding para o cabeçalho */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+#h0 {
+    background-color: #88B04B; /* Cor de fundo do cabeçalho */
+    padding: 15px; /* Padding para o cabeçalho */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    display: flex; /* Usando flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+#h0 h1 {
+    font-size: 2rem; /* Aumenta o tamanho da fonte */
+    color: #F5F5F5; /* Cor do texto */
+    margin: 0; /* Remover margem vertical */
+    text-align: center; /* Centraliza o texto */
+}
+
+#dynamic-text {
+    font-size: 1.1rem; /* Tamanho da fonte do texto dinâmico */
+    color: #F5F5F5; /* Cor do texto dinâmico */
+    margin: 0 20px; /* Margem entre o texto dinâmico e outros elementos */
+    font-style: italic; /* Estilo itálico para destaque */
+    flex-grow: 1; /* Faz com que ocupe o espaço restante */
+    text-align: center; /* Centraliza o texto dinâmico */
+    opacity: 1; /* Opacidade inicial */
+    transition: opacity 0.5s ease-in-out; /* Transição suave para a opacidade */
+}
+
+#h2 {
+    background-color: #d6b916; /* Cor de fundo do cabeçalho */
+    padding: 50px; /* Padding para o cabeçalho */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    display: flex; /* Usando flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    margin: 0; /* Margem superior e inferior */
+}
+
+#h2 h2 {
+    font-size: 1.3rem; /* Aumenta o tamanho da fonte */
+    color: #141414; /* Cor do texto */
+    margin: 0; /* Remove margens padrão */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Espaço entre logo e menu */
+    align-items: center; /* Centraliza verticalmente */
+    margin-right: 25px;
+}
+
+nav img {
+    max-height: 95px; /* Altura máxima do logo */
+    margin-left: 20px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    list-style: none; /* Remove os marcadores da lista */
+    gap: 20px; /* Espaçamento entre os ícones */
+    /* margin: 0;
+    padding: 0; */
+}
+
+nav ul li a img {
+    max-height: 20px; /* Controla a altura dos ícones */
+    /*filter: invert(1);*/ /* Inverte as cores (se seus ícones forem escuros) */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transições suaves */
+}
+
+nav ul li a img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    filter: invert(0.7); /* Ajusta a cor ao passar o mouse */
 }
 
 nav ul li {
+    margin-left: 5px; /* Margem entre os itens do menu */
+    margin-right: 5px; /* Margem à direita */
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
     display: inline;
-    margin-right: 1em;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
+    color: #ffffff; /* Cor do texto do menu */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transição suave para cor */
 }
 
 nav ul li a:hover {
