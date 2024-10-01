@@ -95,3 +95,35 @@ footer {
     background-color: transparent;
     
 }
+
+.n1 {
+    margin-right: 1em;
+    color: #000000f1;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+    background-color: transparent;
+    display: block;
+    margin-top: 10%;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    transform: translateZ(-50%);
+    
+}
+
+.n2 {
+    margin-right: 1em;
+    color: #000000f1;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+    background-color: transparent;
+    display: block;
+    margin-top: 10%;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
