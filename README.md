@@ -15,6 +15,7 @@ Seja bem-vindo à Heroes & Costumes, nosso mundo onde você pode ser quem você 
 ### 📃 Descrição da nossa loja
 Na Heroes & Costumes temos temas diversos para dar vida ao seu cosplay: jogos, animes, séries, filmes e muito mais você encontra aqui!
 Fundada por entusiastas de FrontEnd, temos a intenção de trazer à tona aquele personagem que representa sua personalidade da melhor forma possível.
+Acesse nosso catálogo e encontre as peças de roupas que mais se encaixam com a sua personalidade!
 
 ### 💻 Faça sua conta e você pode acessar nossa loja de onde quiser e como quiser!
 Na aba login, permitimos que você crie sua conta, se tornando assim cliente oficial da nossa loja. 
