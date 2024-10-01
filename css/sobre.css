@@ -119,3 +119,18 @@ footer {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.n3 {
+    color: #000000f1;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+    background-color: transparent;
+    display: block;
+    margin-top: 20%;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
