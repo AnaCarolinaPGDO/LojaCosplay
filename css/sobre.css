@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    
-}
+
 
 .con {
     text-align: center;
@@ -97,7 +93,6 @@ footer {
 }
 
 .n1 {
-    margin-right: 1em;
     color: #000000f1;
     font-size: 1.2em;
     transition: color 0.3s ease;
@@ -107,9 +102,9 @@ footer {
     text-align: center;
     width: 100%;
     padding: 10px;
-    position: relative;
-    transform: translateZ(-50%);
-    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .n2 {
@@ -126,4 +121,7 @@ footer {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
