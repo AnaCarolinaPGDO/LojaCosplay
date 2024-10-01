@@ -16,13 +16,14 @@
     <script src="../javascript/base.js" defer></script>
     <script src="../javascript/function.js" defer></script>
     <script src="../javascript/request.js" defer></script> 
+    <script src="../javascript/cadastro.js" defer></script>
 
     </head>
 
   <main>
     <body>
       <div class="logo-container">
-        <img src="/fotos/logo/logo.png" alt="Logo" style="max-width: 100px; display: block; margin: 0 auto;">
+        <img src="/fotos/logo/logo.png" alt="Logo">
     </div>
 
     <div id="container">
@@ -38,6 +39,10 @@
             <label for="inputPassword4" class="form-label">Senha</label>
             <input type="password" class="form-control" id="inputPassword4">
           </div>
+          <div class="col-md-6">
+            <label for="senhaConfirmada" class="form-label">Confirmar Senha</label>
+            <input type="password" class="form-control" id="senhaConfirmada">
+        </div>        
           <div class="col-12">
             <label for="inputAddress" class="form-label">Endereço</label>
             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Rua Principal">
@@ -63,7 +68,7 @@
             <input type="text" class="form-control" id="inputZip">
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="button" id="cadastroBtn" class="btn btn-primary">Criar conta</button>
           </div>
         </form>
       </div>
@@ -86,7 +91,7 @@
   
   <footer>
     <p>&copy; 2024 Heroes & Costumes. Todos os direitos reservados.</p>
-</footer>
+  </footer>
     <script src="./home.html"></script>
 </body>
 </html>
