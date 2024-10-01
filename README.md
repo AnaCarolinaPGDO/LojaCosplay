@@ -11,7 +11,6 @@ Esperamos que se divirta por essa apresentação do nosso projeto final! Sayōna
 
 ## 🌈 Início
 Seja bem-vindo à Heroes & Costumes, nosso mundo onde você pode ser quem você quiser, no mundo que quiser!
-*link da loja
 
 ### 📃 Descrição da nossa loja
 Na Heroes & Costumes temos temas diversos para dar vida ao seu cosplay: jogos, animes, séries, filmes e muito mais você encontra aqui!
@@ -20,17 +19,6 @@ Fundada por entusiastas de FrontEnd, temos a intenção de trazer à tona aquele
 ### 💻 Faça sua conta e você pode acessar nossa loja de onde quiser e como quiser!
 Na aba login, permitimos que você crie sua conta, se tornando assim cliente oficial da nossa loja. 
 Crie seu usário e senha da forma que quiser.
-*pint da tela login
-
-```
-Dar exemplos
-```
-```
-Até finalizar
-```
-
-## 🔍 Como encontrar o catálogo que melhor se encaixa na sua personalidade
-
 
 ## ⚙️ Ferramentas
 Nós usamos HTML, CSS e JavaScript no VSCode para esse projeto.
