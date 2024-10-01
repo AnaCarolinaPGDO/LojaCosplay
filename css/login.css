@@ -22,13 +22,13 @@ body {
 /* Estilo do logo */
 .logo-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-top: 0px;
 }
 
-.logo-container img{
-    max-width: 100px;
-    height: auto;
+.logo-container img {
+    max-width: 250px; /* Aumenta o tamanho máximo da largura */
+    height: auto; /* Mantém a proporção da altura */
 }
 
 /* Estilo do container principal, card */
@@ -40,7 +40,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 /* Estilo do titulo do FORM */

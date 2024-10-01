@@ -1,43 +1,20 @@
-function login() {
-    const name = document.getElementById("inputEmail4").value;
-    const password = document.getElementById("inputPassword4").value;
+window.onload = function() {
+    console.log("Função window.onload executada");
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+    const usuarioAdmin = usuarios.find(usuario => usuario.email === "admin@admin.com");
     
-    if (name == "admin@admin.com" && password == 123) {
-    irParaHome();
-    salvarEmail(name);
-    } else {
-    alert("Por favor adicionar informações de login!");
+    if (!usuarioAdmin) {
+        const usuarioTeste = {
+            email: "admin@admin.com",
+            senha: "123",
+            endereco: "Rua dos Testes, 123",
+            endereco2: "Apt. 1",
+            cidade: "Teste City",
+            estado: "RJ",
+            cep: "12345-678"
+        };
+        usuarios.push(usuarioTeste);
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
     }
-}
-
-function cadastro() {
-    const senha = document.getElementById("senha_cad").value;
-    const senhaConfirmada = document.getElementById("senhacon_cad").value;
-    if (senha !== senhaConfirmada) {
-    alert("As senhas não correspondem!");
-    return false;
-    }
-    irParaLogin();
-    return true;
-    }
-
-function irParaHome() {
-    window.open("../html/home.html", "_self");
-}
-
-function irParaLogin() {
-    window.open("../html/login.html", "_self");
-}
-
-function irParaCadastro() {
-    window.open("../html/cadastrar.html", "_self");
-}
-
-function sair() {
-    removerEmail()
-    irParaHome();
-}
-
-function cadastro() {
-    irParaCadastro();
-}
+};

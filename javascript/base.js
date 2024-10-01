@@ -1,78 +1,65 @@
-function salvarEmail(name) {
-    localStorage.setItem("email", name);
+function salvarEmail(email) {
+  localStorage.setItem("usuarioLogado", email);
 }
 
 function removerEmail() {
-    localStorage.removeItem("email");
+  localStorage.removeItem("usuarioLogado");
 }
 
 function pegarEmail() {
-    return localStorage.getItem("email");
+  return localStorage.getItem("usuarioLogado");
 }
 
 function usuarioLogado() {
-    let email = pegarEmail();
-    return !!email;
-}
-
-function sair() {
-    removerEmail();
-    irParaHome();
+  let email = pegarEmail();
+  return !!email;
 }
 
 function validarUsuario() {
-    let logado = usuarioLogado();
-    const caminho = window.location.pathname;
+  let logado = usuarioLogado();
+  const caminho = window.location.pathname;
 
-    if (caminho === "/html/login.html" && logado) {
+  if (caminho === "/html/login.html" && logado) {
       irParaHome();
-    }
-    // if (caminho === "/html/login.html") {
-    //   if (logado) {
-    //     irParaHome();
-    //   }
-    // } else if (caminho != "/html/login.html" && caminho != "/html/cadastrar.html") {
-    //   if (!logado) {
-    //     irParaLogin();
-    //   }
-    if (logado) {
-      const loginBtn = document.getElementById("loginBtn");
-      const sairBtn = document.getElementById("sairBtn");
-      
+  }
+
+  const loginBtn = document.getElementById("loginBtn");
+  const sairBtn = document.getElementById("sairBtn");
+
+  if (logado) {
+      if (sairBtn) {
+          sairBtn.style.display = "block";
+      }
       if (loginBtn) {
-        sairBtn.style.display = "block";
-        loginBtn.style.display = "none";
-    }
-  }else {
-    sairBtn.style.display = "none"
-    loginBtn.style.display = "block"
+          loginBtn.style.display = "none";
+      }
+  } else {
+      if (sairBtn) {
+          sairBtn.style.display = "none";
+      }
+      if (loginBtn) {
+          loginBtn.style.display = "block";
+      }
   }
 }
-  validarUsuario();
 
-  function cadastro() {
-    irParaCadastro();
+function sair() {
+  removerEmail(); // Remove o email do localStorage
+  irParaHome(); // Redireciona para a home
 }
 
-function validarCadastro() {
-const senha = document.getElementById("senha_cad").value;
-const senhaConfirmada = document.getElementById("senha_confirmar_cad").value;
-if (senha !== senhaConfirmada) {
-alert("As senhas não correspondem!");
-return false;
-}
-
-return true;
-}
 
 function irParaHome() {
-  window.open("../html/home.html", "_self");
+  window.location.href = "../html/home.html";
 }
 
 function irParaLogin() {
-  window.open("../html/login.html", "_self");
+  window.location.href = "../html/login.html";
 }
 
 function irParaCadastro() {
   window.location.href = "../html/cadastrar.html";
 }
+
+// Chama a função para validar o usuário ao carregar a página
+validarUsuario();
