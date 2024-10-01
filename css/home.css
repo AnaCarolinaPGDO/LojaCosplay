@@ -14,7 +14,7 @@ body {
     font-size: 1.5em;
     color: #15158df1;
     text-align: center;
-    margin-bottom: 10em;
+    margin-bottom: 2em;
     text-align: center;
 }
 .h3{
@@ -27,10 +27,11 @@ header {
     color: #fff;
     padding: 1em;
     text-align: center;
+    
 }
 
 header h1 {
-    padding: 2em;
+    padding: 0em;
     text-align: center;
 }
 
@@ -97,7 +98,7 @@ nav ul li a:hover {
 .central{
     background-color: #ffff;
     border: 1px solid #ddd;
-    padding: 2em;
+    padding: 1em;
     text-align: center;
 }
 
@@ -111,7 +112,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #540303;
+    background-color: #5a0404;
     color: #fff;
     text-align: center;
     padding: 1em;
@@ -123,4 +124,36 @@ footer {
     margin-right: 1em;
     width: 250px;
     height: 250px;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 250px; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 30px; /* Margem à direita da imagem */
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+    flex-shrink: 0; /* Impede que a imagem seja redimensionada para menos que o necessário */
+}
+.produtos img {
+    max-width: 250px; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 30px; /* Margem à direita da imagem */
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+    flex-shrink: 0; /* Impede que a imagem seja redimensionada para menos que o necessário */
+}
+.pi {
+    font-size: 1.5em;
+    color: #15158df1;
+    text-align: center;
+    margin-bottom: 2em;
+    text-align: center;
+
+}
+
+.pii {
+    font-size: 1em;
+    color: #09094cf1;
+    text-align: center;
+    margin-bottom: 1em;
+    text-align: center;
 }
